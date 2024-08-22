@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "tipo": "Personal",
+    "tasaInteres": 25,
+    "monto": 50000
+  },
+  {
+    "id": 2,
+    "tipo": "Hipotecario",
+    "tasaInteres": 10,
+    "monto": 1000000
+  },
+  {
+    "id": 3,
+    "tipo": "Automotriz",
+    "tasaInteres": 15,
+    "monto": 150000
+  },
+  {
+    "id": 4,
+    "tipo": "Estudio",
+    "tasaInteres": 12,
+    "monto": 15000
+  },
+  {
+    "id": 5,
+    "tipo": "Consolidacion de deuda",
+    "tasaInteres": 20,
+    "monto": 25000
+  },
+  {
+    "id": 6,
+    "tipo": "Mejora de hogar",
+    "tasaInteres": 18,
+    "monto": 50000
+  },
+  {
+    "id": 7,
+    "tipo": "Expansion de negocios",
+    "tasaInteres": 22,
+    "monto": 100000
+  },
+  {
+    "id": 8,
+    "tipo": "Compra de terrenos",
+    "tasaInteres": 20,
+    "monto": 150000
+  },
+  {
+    "id": 9,
+    "tipo": "Construccion de vivienda",
+    "tasaInteres": 18,
+    "monto": 250000
+  }
+]
