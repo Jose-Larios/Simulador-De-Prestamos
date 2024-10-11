@@ -76,6 +76,7 @@ const solicitarPrestamo = (index) => {
   let formularioCard = document.createElement("div");
   formularioCard.className = "formPres";
   formularioCard.innerHTML = `
+   <h2>Complete el formulario</h2>
     <form onsubmit=subirFormulario(event)>
     <h3 class="elementoFormPres">Usted decidio el prestamo: ${elemento.tipo}</h3>
     <h3 class="elementoFormPres">Con tasa de interes del ${elemento.tasaInteres}%</h3>

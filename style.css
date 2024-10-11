@@ -1,121 +1,151 @@
-* {
-  padding: 0;
+/* Estilos generales */
+body {
+  font-family: "Verdana", sans-serif;
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  background-color: #2c3e50;
+  color: #ecf0f1;
 }
-/* Nav */
+
+/* Navbar */
 nav {
-  background-color: rgb(0, 0, 0);
-  height: 100px;
+  background-color: #1abc9c;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  padding: 50px;
-  color: rgb(244, 245, 239);
+nav h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
 }
 
-img {
-  height: 100px;
+nav img {
+  width: 50px;
+  height: 50px;
 }
 
-/* Tipos de prestamos */
+/* Main content */
 main {
-  background-color: rgb(55, 73, 35);
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h2 {
-  text-align: center;
-  padding-top: 25px;
+  color: #1abc9c;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-#tiposPrestamos {
-  padding: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Tipos de prestamos */
+#tiposPrestamos,
+#formularioPrestamos,
+#prestamosCalculados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
+/* Tarjetas de prestamos */
 .tipPres {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  width: 300px;
-  height: 150px;
-  margin: 25px;
-  border: 2px solid black;
-  border-radius: 30px;
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tipPres:hover {
+  transform: translateY(-5px);
+  background-color: #1abc9c;
 }
 
 .elementoTipPres {
-  margin: 5px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #ecf0f1;
 }
 
-/* Formulario de prestamo */
-#formularioPrestamos {
-  background-color: black;
-}
-
-.formPres {
-  display: flex;
-  justify-content: center;
-  padding: 50px;
+button {
+  background-color: #e74c3c;
   color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid white;
-  border-radius: 30px;
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Formulario de prestamos */
+.formPres {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
 }
 
 .elementoFormPres {
-  margin: 5px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #1abc9c;
+  color: #2c3e50;
 }
 
 /* Prestamos calculados */
-#prestamosCalculados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 .carPres {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 25px;
-  border: 2px solid black;
-  border-radius: 30px;
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .elementoCarPres {
-  margin: 5px;
-}
-
-#tituloPrestamosCalculados {
-  text-align: center;
-  padding: 30px;
+  margin: 10px 0;
+  color: #ecf0f1;
 }
 
 /* Footer */
 footer {
-  background-color: rgb(0, 0, 0);
-  height: 50px;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
+  background-color: #1abc9c;
+  color: white;
   padding: 15px;
+  text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(39, 213, 0);
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ecf0f1;
 }
